@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You have registered Successfully!!</title>
+    <link rel="stylesheet" href="{% static 'meetups/styles/base.css' %}">
+    <link rel="stylesheet" href="{% static 'meetups/styles/registration-confirmation.css' %}">
+
+</head>
+<body>
+
+    <header id="main-header">
+        <nav><a href="/meetups" id="main-logo">Meetups</a></nav>
+        <h1>Thank you for Signing up!</h1>
+    </header>
+
+    <main>
+        <section id="confirmation">
+            <h2>You Registered Successfully to the Meeting</h2>
+            <p>Thank you for Registering - See you at the meeting</p>
+            <p>Got questions or can't make it? Please <a href="mailto:{{organizer_email}}">contact the Organizers</a> ahead of time!</p>
+        </section>
+
+        <section id="continue">
+            <p>Signup for more Events!</p>
+            <p><a href="/meetups" class="btn">Explore more!</a></p>
+        </section>
+    </main>
+    
+    
+</body>
+</html>
